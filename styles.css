@@ -1,0 +1,344 @@
+* {
+    box-sizing: border-box;
+}
+
+@media (max-width: 1000px) {
+    .license-1c{padding: 40px 0;}
+}
+@media (max-width: 991px) {
+    .container { width: 100%; }
+    .calc-license__range { margin-bottom: 60px; }
+    label { margin-bottom: 10px; }
+}
+@media (max-width: 990px) {
+    h2.bit-title2 {
+        font-size: 23px;
+    }
+}
+@media (max-width:767px ){
+    .license-1c {padding: 25px 0;}
+    .license-1c .bit-title2 {margin-bottom: 25px;}
+}
+@media screen and (max-width: 600px) {
+    .bit-title2 {
+        font-size: 18px !important;
+    }
+}
+
+@media (max-width: 586px) {
+    .bit-title2 {
+        font-size: 20px;
+    }
+}
+
+
+
+.input-container {
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+.input-container label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #333;
+        }
+
+body {
+    margin:0;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #414141;
+    background: #fff;
+}
+
+.bit-title2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #352c85;
+    text-align: center;
+    margin-top: 0 0 35px;
+}
+
+
+.license-1c {
+    padding: 50px 0 35px;
+    background-color: #fff;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {
+    outline: 0;
+}
+* {
+    box-sizing: border-box;
+}
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div.container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.license-1c .bit-title2 {
+    margin-bottom: 35px;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+.calc-license {
+    border: 1px solid #d8d8d8;
+    float: left;
+    width: 100%;
+    padding: 30px;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+.container:before, .container:after, .row:before, .row:after {
+    content: " ";
+    display: table;
+}
+.col-md-4{
+    position: relative;
+    min-height: 1px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+label {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+
+.input-group {
+    margin-bottom: 0;
+}
+
+
+
+input[type="number"], input[type="range"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+input[type="number"]:focus{
+    color: #e50071;
+    outline: 1px solid #e50071;
+}
+
+
+input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 8px;
+    background: #ddd;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #c9007e;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.range-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+.period-selector {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.period-selector button {
+    flex: 1;
+    padding: 10px;
+    background: #bfd6db;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-sizing: border-box;
+}
+
+.period-selector button.active {
+    background: #3498db;
+    color: white;
+}
+
+.result-section {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.result-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.result-value {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.highlight {
+    color: #e74c3c;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 50px 0 0 0;
+    width: auto; 
+    display: block;  
+    transition: background 0.3s;
+}
+
+#calculate {
+    background: transparent;
+    color: #c9007e;
+    border:1px solid #c9007e;
+    padding: 12px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 50px 0 0 0;
+    width: auto; 
+    display: block; 
+    transition: background 0.3s;
+}
+#calculate:hover {
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: #352c85;
+}
+
+button:hover {
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: #352c85;
+}
+
+
+.slider-container {
+    position: relative;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+.slider-ticks-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 5px;
+}
+
+.tick {
+    position: relative;
+    text-align: center;
+    flex: 1;
+}
+
+.tick-label {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 17px;
+    color: #7f8c8d;
+    white-space: nowrap;
+}
+
+.slider-value {
+    position: absolute;
+    background: #3498db;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    top: -1px;
+    left: 0;
+    transform: translateX(0);
+    pointer-events: none;
+    user-select: none;
+    white-space: nowrap;
+    min-width: 20px;
+    text-align: left;
+}
+.slider-current-value, .slider-current-ticket {
+    font-size: 20px;
+    font-weight: bold;
+    color: #c9007e;
+    margin: 5px 0 15px 0; 
+    text-align: left;
+    min-height: 24px; 
+    left: 10px;
+}
+

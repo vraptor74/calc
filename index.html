@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Калькулятор доходности для медицинской клиники</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="license-1c" id="license-1c">
+        <div class="container">
+            <h2 class="bit-title2">Калькулятор доходности медицинской клиники</h2>
+            <div class="calc-license">
+                <div class="row">
+                    <div class="col-md-4 calc-license__range_outer">
+                        <div class="calc-license__range">
+                            <div class="input-container">
+                                <div class="input-group">
+                                    <label for="records">1. Среднее количество записей в день:</label>
+                                    <input type="number" id="records" min="1" max="100" value="7" />
+                                </div>
+                            </div>
+                            <div class="input-container">
+                                <div class="input-group">
+                                    <label>2. Потенциальное увеличение записей через онлайн-запись: </label>
+                                    <div class="slider-current-value">15%</div> 
+                                        <div class="slider-container">
+                                            <input type="range" id="increase" min="10" max="20" step="1" value="15" />
+                                            <div class="range-labels">
+                                                <span>10%</span>
+                                                <span>15%</span>
+                                                <span>20%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="input-container">
+                                <div class="input-group">
+                                    <label for="price">3. Средняя стоимость приема (руб.):</label>
+                                    <input type="number" id="price" min="500" max="10000" value="2000" />
+                                </div>
+                            </div>
+                            <div class="input-container">
+                                <div class="input-group">
+                                    <label>4. Период расчета:</label>
+                                    <div class="period-selector">
+                                        <button data-days="22" class="active">Месяц (22 дня)</button>
+                                        <button data-days="132">Полгода (132 дня)</button>
+                                        <button data-days="264">Год (264 дня)</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-container">
+                                <div class="input-group">
+                                    <label>5. Среднее количество записей через онлайн-запись в день:</label>
+                                    <div class="slider-current-ticket">7</div> 
+                                    <div class="slider-container">
+                                        <input type="range" id="online-records" min="1" max="16" step="1" value="7" />
+                                        <div class="slider-ticks-container">
+                                            <div class="tick"><span class="tick-label">1 (min)</span></div>
+                                            <div class="tick"><span class="tick-label">7 (среднее)</span></div>
+                                            <div class="tick"><span class="tick-label">16 (max)</span></div>
+                                        </div>              
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button id="calculate">Рассчитать</button>
+                            
+                            <div class="result-section" id="results" style="display: none;">
+                                <h2>Результаты расчета</h2>
+                                
+                                <div class="result-item">
+                                    <span>Текущее количество записей:</span>
+                                    <span class="result-value" id="current-records"></span>
+                                </div>
+                                
+                                <div class="result-item">
+                                    <span>Потенциальное увеличение записей:</span>
+                                    <span class="result-value" id="potential-increase"></span>
+                                </div>
+                                
+                                <div class="result-item">
+                                    <span>Количество рабочих дней:</span>
+                                    <span class="result-value" id="work-days"></span>
+                                </div>
+                                
+                                <div class="result-item">
+                                    <span>Текущий доход:</span>
+                                    <span class="result-value" id="current-income"></span>
+                                </div>
+                                
+                                <div class="result-item">
+                                    <span>Потенциальный доход с онлайн-записью:</span>
+                                    <span class="result-value" id="potential-income"></span>
+                                </div>
+                                
+                                <div class="result-item highlight">
+                                    <span>Увеличение доходности:</span>
+                                    <span class="result-value highlight" id="income-increase"></span>
+                                </div>
+                                
+                                <div class="result-item highlight">
+                                    <span>Рост доходности:</span>
+                                    <span class="result-value highlight" id="income-growth"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
