@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const slidetTicket = document.getElementById("online-records");
     const valueDisplayTicket = document.querySelector(".slider-current-ticket");
     // Параметры расчета
-    let workDays = 22; // По умолчанию месяц
+    let workDays = 30; // По умолчанию месяц
     
     // Обработчики событий
     periodButtons.forEach(button => {
